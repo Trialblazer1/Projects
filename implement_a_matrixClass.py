@@ -62,10 +62,7 @@ class Matrix(object):
         elif self.h == 2:
             mtx_det = self[0][0] * self[1][1] - self[0][1] * self[1][0]
             return mtx_det
-
-
-        # TODO - your code here
-
+        
     def trace(self):
         """
         Calculates the trace of a matrix (sum of diagonal entries).
@@ -83,8 +80,7 @@ class Matrix(object):
 
         #return sum([self.g[j][j] for j in range(self.h)])
 
-        # TODO - your code here
-
+     
     def inverse(self):
         """
         Calculates the inverse of a 1x1 or 2x2 Matrix.
@@ -137,8 +133,7 @@ class Matrix(object):
             #invv[1][0] = (1/det) * (-1 * c)
             #invv[1][1] = (1/det) * a
 
-        # TODO - your code here
-
+       
     def T(self):
         """
         Returns a transposed copy of this Matrix.
@@ -153,7 +148,6 @@ class Matrix(object):
 
         return Matrix(mtx_trans)
 
-        # TODO - your code here
 
     def is_square(self):
         return self.h == self.w
@@ -207,7 +201,6 @@ class Matrix(object):
 
         return Matrix(mtx_add)
         #
-        # TODO - your code here
         #
 
     def __neg__(self):
@@ -234,7 +227,7 @@ class Matrix(object):
         return Matrix(mtx_neg)
 
         #
-        # TODO - your code here
+        # 
         #
 
     def __sub__(self, other):
@@ -252,7 +245,7 @@ class Matrix(object):
         return (self + -other)
 
         #
-        # TODO - your code here
+        #
         #
 
     def __mul__(self, other):
@@ -279,7 +272,7 @@ class Matrix(object):
         return Matrix(mtx_mul)
 
         #
-        # TODO - your code here
+        # 
         #
 
     def __rmul__(self, other):
@@ -308,5 +301,4 @@ class Matrix(object):
 
             #pass
             #
-            # TODO - your code here
-            #
+            # 
