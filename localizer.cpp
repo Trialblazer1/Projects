@@ -4,11 +4,7 @@
 	Purpose: implements a 2-dimensional histogram filter
 	for a robot living on a colored cyclical grid by
 	correctly implementing the "initialize_beliefs",
-	"sense", and "move" functions.
-
-	This file is incomplete! Your job is to make these
-	functions work. Feel free to look at localizer.py
-	for working implementations which are written in python.
+	"sense", and "move" functions.	
 */
 
 #include "localizer.h"
@@ -19,8 +15,6 @@
 using namespace std;
 
 /**
-	TODO - implement this function
-
     Initializes a grid of beliefs to a uniform distribution.
 
     @param grid - a two dimensional grid map (vector of vectors
@@ -64,8 +58,7 @@ vector< vector <float> > initialize_beliefs(vector< vector <char> > grid) {
 }
 
 /**
-  TODO - implement this function
-
+  
     Implements robot motion by updating beliefs based on the
     intended dx and dy of the robot.
 
@@ -104,8 +97,6 @@ vector< vector <float> > move(int dy, int dx,
   vector < vector <float> > beliefs,
   float blurring)
 {
-  // your code here
-
   int r = beliefs.size();
   int c = beliefs[0].size();
   int new_r = 0;
@@ -128,8 +119,6 @@ vector< vector <float> > move(int dy, int dx,
 
 
 /**
-	TODO - implement this function
-
     Implements robot sensing by updating beliefs based on the
     color of a sensor measurement
 
@@ -186,8 +175,5 @@ vector< vector <float> > sense(char color,
       }
     }
   }
-
-	// your code here
-
 	return normalize(newGrid);
 }
